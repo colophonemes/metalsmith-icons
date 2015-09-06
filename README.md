@@ -4,9 +4,11 @@ A [Metalsmith](http://metalsmith.io) plugin for automatically building font icon
 
 ## Overview
 
-Font-based icon sets like [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons/) are a great way to add icons to your UI, but rely on large
+Font-based icon sets like [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons/) are a great way to add icons to your UI, but rely on relatively large (often 50kb+) font files, even if you're only using a few icons across your site.
 
-[Fontello](http://fontello.com) is an awesome service that allows you to manually build 
+[Fontello](http://fontello.com) is an awesome service that allows you to manually build an icon set from. However, this is annoying to redo manually every time you add or remove icons from your site.
+
+`metalsmith-icons` finds all the icons you're using, automates your Fontello build, and automatically adds the generated font files and CSS markup to your build. The result is a tiny font file, meaning your UI loads much faster!
 
 The plugin:
 - scans all your HTML files for CSS classes corresponding to icon fonts
@@ -79,10 +81,10 @@ _(more sets coming soon, see below...)_
 If you're used to the default Font Awesome markup, you're using something like this to declare your icons:
 
 ```html
-<p><i class="fa fa-download"></i> Download<p>
+<p><a href="file.pdf"><i class="fa fa-download"></i> Download</a><p>
 ```
 
-So, you want to map `fa` to the `fontawesome` font set.
+So, you want to map the CSS class `fa` to the `fontawesome` font set.
 
 ```js
 sets: {	fa:'fontawesome'}
@@ -93,6 +95,10 @@ sets: {	fa:'fontawesome'}
 Options recognised by the Fontello API. The defaults should be fine unless you want to change the name of the font files, or the CSS class that will end up in the markup.
 
 Don't add a `glyphs` key, as the plugin does this for you!
+
+#### `cache` [String / Boolean]
+
+A path to a folder that will be used to cache font files to save the HTTP lookup for subsequent builds that use the same set of icons. Set to `false` to disable caching. Defaults to `./.icon_cache`.
 
 #### `fontDir` [String]
 
