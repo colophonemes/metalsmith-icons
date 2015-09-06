@@ -58,7 +58,7 @@ var defaults = {
           units_per_em: 1000,
           ascent: 850
     },
-    substitutions: loadSubstitutions(),
+    substitutions: loadSubstitutions(), ## loads substitutions object from substitutions.yml
     cache: './.icon_cache',
     fontDir: 'font',
     CSSDir: 'styles'
@@ -108,13 +108,25 @@ Path within your build to put fonts. Defaults to `font` (as per Fontello's defau
 
 Path within your build to put the CSS file. Defaults to `styles`
 
-### Substitutions
+## `Substitutions` [Object]
 
-For some reason, some of the fonts in the Font Awesome set are . There are two options:
+For some reason, some of the icons in the Font Awesome set use a different CSS class name on Fontello.
 
-a) Use the  
+If you'd prefer to use the original Font Awesome CSS classes, the plugin will do the substitution for you.
 
-A default set of substitutions are read from `substitutions.yml`. Ideally, 
+A default set of substitutions are read from `substitutions.yml`. [This page](http://fontello.github.io/awesome-uni.font/demo.html) has the classes the Fontello version of Font Awesome is using.
+
+If you find a substitution, it would be amazing if you could [submit a pull request on `substitutions.yml`](https://github.com/colophonemes/metalsmith-icons/edit/master/substitutions.yml). However, in the meantime you can just map the substitution in the options:
+
+```js
+.use(icons({
+	substitutions: {
+		fontawesome: {
+			chevron-down: down-open
+		}
+	}
+}))
+```
 
 ## Caveats
 
