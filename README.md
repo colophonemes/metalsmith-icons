@@ -58,7 +58,7 @@ var defaults = {
           units_per_em: 1000,
           ascent: 850
     },
-    substitutions: loadSubstitutions(), ## loads substitutions object from substitutions.yml
+    substitutions: loadSubstitutions(), // loads substitutions object from substitutions.yml
     cache: './.icon_cache',
     fontDir: 'font',
     CSSDir: 'styles'
