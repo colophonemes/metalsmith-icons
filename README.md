@@ -130,7 +130,7 @@ If you find a substitution, it would be amazing if you could [submit a pull requ
 
 ## Caveats
 
-This is still in very early stages of development, so currently only supports the Font Awesome font set. More to come soon. Feel free to add more 
+This is still in very early stages of development, so currently only supports the Font Awesome font set. More to come soon. Feel free to open an issue or submit a pull request!
 
 ## To Do
 
