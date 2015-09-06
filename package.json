@@ -14,6 +14,10 @@
     "metalsmith"
   ],
   "author": "Sam Deere / colophonemes <dev@colophonemes.com>",
+  "repository": {
+    "type" : "git"
+  , "url" : "https://github.com/colophonemes/metalsmith-icons.git"
+  },
   "license": "ISC",
   "dependencies": {
     "adm-zip": "^0.4.7",
