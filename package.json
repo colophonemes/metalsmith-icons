@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-icons",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Generate an icon font file just for the icons your site uses, using Fontello",
   "main": "lib/index.js",
   "scripts": {
@@ -15,8 +15,8 @@
   ],
   "author": "Sam Deere / colophonemes <dev@colophonemes.com>",
   "repository": {
-    "type" : "git"
-  , "url" : "https://github.com/colophonemes/metalsmith-icons.git"
+    "type": "git",
+    "url": "https://github.com/colophonemes/metalsmith-icons.git"
   },
   "license": "ISC",
   "dependencies": {
