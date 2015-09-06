@@ -108,7 +108,7 @@ Path within your build to put fonts. Defaults to `font` (as per Fontello's defau
 
 Path within your build to put the CSS file. Defaults to `styles`
 
-## `Substitutions` [Object]
+#### `Substitutions` [Object]
 
 For some reason, some of the icons in the Font Awesome set use a different CSS class name on Fontello.
 
