@@ -7,7 +7,13 @@ fontawesome:
   arrow-right: right-big
   arrow-up: up-big
   arrow-down: down-big
+  arrow-circle-o-down: down-circled2
+  arrow-circle-o-up: up-circled2
+  arrow-circle-o-left: left-circled2
+  arrow-circle-o-right: right-circled2
   bars: menu
   warning: attention
   facebook-square: facebook-squared
+  google-plus: gplus
+  calculator: calc
   line-chart: chart-line
