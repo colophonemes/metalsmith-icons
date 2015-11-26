@@ -17,3 +17,12 @@ fontawesome:
   google-plus: gplus
   calculator: calc
   line-chart: chart-line
+  file-pdf-o: file-pdf
+  file-word-o: file-word
+  file-excel-o: file-excel 
+  file-powerpoint-o: file-powerpoint
+  file-image-o: file-image
+  file-archive-o: file-archive
+  file-audio-o: file-audio
+  file-video-o: file-video
+  file-code-o: file-code
