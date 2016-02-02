@@ -26,3 +26,7 @@ fontawesome:
   file-audio-o: file-audio
   file-video-o: file-video
   file-code-o: file-code
+  file-text-o: doc-text
+  lightbulb-o: lightbulb
+  refresh: arrows-cw
+  question-circle: help-circled
