@@ -30,3 +30,7 @@ fontawesome:
   lightbulb-o: lightbulb
   refresh: arrows-cw
   question-circle: help-circled
+  check: ok
+  check-circle: ok-circled
+  check-circle-o: ok-circled2
+  circle-o: circle-empty
