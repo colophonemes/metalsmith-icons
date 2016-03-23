@@ -1,6 +1,6 @@
 # Metalsmith Icons
 
-A [Metalsmith](http://metalsmith.io) plugin for automatically building font icon sets 
+A [Metalsmith](http://metalsmith.io) plugin for automatically building font icon sets
 
 ## Overview
 
@@ -45,7 +45,7 @@ Metalsmith(__dirname)
 
 ### Options
 
-#### Default options: 
+#### Default options:
 
 ```js
 var defaults = {
@@ -61,7 +61,14 @@ var defaults = {
     substitutions: loadSubstitutions(), // loads substitutions object from substitutions.yml
     cache: './.icon_cache',
     fontDir: 'font',
-    CSSDir: 'styles'
+    CSSDir: 'styles',
+    icon_helpers: {
+      fontawesome: ["fa-lg fa-2x fa-3x fa-4x fa-5x",
+         "fa-fw fa-ul fa-li fa-border fa-pull-right fa-pull-left",
+         "fa-spin fa-pulse fa-rotate-90 fa-rotate-180 fa-rotate-270",
+         "fa-flip-horizontal fa-flip-vertical fa-stack fa-stack-1x",
+         "fa-stack-2x fa-inverse"].join(" ")
+    }
 };
 ```
 
@@ -127,6 +134,9 @@ If you find a substitution, it would be amazing if you could [submit a pull requ
 	}
 }))
 ```
+#### `icon_helpers` [Object]
+
+These are css classes that begin with the prefix of the font set, but are not themselves icons.  They should be handled differently.
 
 ## Caveats
 
