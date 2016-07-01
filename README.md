@@ -49,7 +49,7 @@ Metalsmith(__dirname)
 
 ```js
 var defaults = {
-    sets : false,
+    sets : { fa: fontawesome },
     fontello: {
           name: 'icons',
           css_prefix_text: "icon-",
@@ -58,9 +58,8 @@ var defaults = {
           units_per_em: 1000,
           ascent: 850
     },
-    substitutions: loadSubstitutions(), // loads substitutions object from substitutions.yml
     cache: './.icon_cache',
-    fontDir: 'font',
+    fontDir: 'fonts',
     CSSDir: 'styles'
 };
 ```
@@ -127,6 +126,16 @@ If you find a substitution, it would be amazing if you could [submit a pull requ
 	}
 }))
 ```
+
+## Demo
+
+To see the plugin working, run the demo script:
+
+```
+$ npm run demo
+```
+
+This builds to `./demo/build`.
 
 ## Caveats
 

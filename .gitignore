@@ -1,2 +1,6 @@
 node_modules
+npm-debug.log
 .DS_Store
+demo/dest
+demo/build
+.icon_cache
