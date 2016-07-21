@@ -5,7 +5,9 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "demo": "DEBUG=metalsmith-icons node ./demo/metalsmith.js"
+    "demo": "DEBUG=metalsmith-icons node ./demo/metalsmith.js",
+    "demo:nocache": "DEBUG=metalsmith-icons node ./demo/metalsmith.js --no-cache"
+
   },
   "keywords": [
     "font",
