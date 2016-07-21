@@ -7,7 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "demo": "DEBUG=metalsmith-icons node ./demo/metalsmith.js",
     "demo:nocache": "DEBUG=metalsmith-icons node ./demo/metalsmith.js --no-cache"
-
   },
   "keywords": [
     "font",
@@ -34,11 +33,10 @@
     "merge": "^1.2.0",
     "minimatch": "^3.0.2",
     "mkdirp": "^0.5.1",
+    "needle": "^1.0.0",
     "randomstring": "^1.1.5",
     "rc": "^1.1.6",
-    "replaceall": "^0.1.6",
-    "request": "^2.72.0",
-    "request-promise": "^3.0.0"
+    "replaceall": "^0.1.6"
   },
   "devDependencies": {
     "metalsmith": "^2.1.0"
